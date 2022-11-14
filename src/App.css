@@ -1,38 +1,115 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #eeeeee;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  max-width: 550px;
+  margin: auto;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #F55A5A;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 15px;
+  font-family: Inter, sans-serif;
+}
+
+.App-header-text {
+  padding-left: 10px;
+}
+
+.records-list {
+  padding: 30px 40px;
+  background-color: #ffffff;
+}
+
+.single-record {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px #F5F5F5;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.single-record:last-of-type {
+  border: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.record-pic {
+  width: 125px;
+  max-width: 125px;
+  height: 168px;
+  border-radius: 5px;
+}
+
+.record-contents {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-left: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.contents-header {
+font-family: Inter, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 10.24px;
+line-height: 12px;
+letter-spacing: 0.17em;
+color: #2B283A;
+text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contents-header > a {
+font-family: Inter;
+font-style: normal;
+font-weight: 400;
+font-size: 10.24px;
+line-height: 12px;
+letter-spacing: 0;
+/* identical to box height */
+text-decoration-line: underline;
+color: #918E9B;
+text-transform:none;
+padding-left: 10px;
+}
+
+.contents-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #2B283A;
+  padding: 10px 0 15px 0;
+}
+
+.contents-dates {
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+
+  color: #2B283A;
+  padding-bottom: 10px;
+}
+
+.contents-description {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  /* or 15px */
+
+  color: #2B283A;
 }
